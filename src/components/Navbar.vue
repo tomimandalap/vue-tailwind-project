@@ -1,7 +1,7 @@
 <template>
   <div class="bg-slate-200 fixed top-0 left-0 right-0">
     <nav
-      class="lg:container lg:mx-auto flex flex-row justify-between items-center h-16"
+      class="lg:container md:container lg:mx-auto md:mx-auto flex flex-row justify-between items-center h-16"
     >
       <div>
         <router-link to="/">
@@ -22,11 +22,6 @@
           Say, Hello
         </button>
       </div>
-      <!-- <ul class="flex flex-row justify-center items-center text-white">
-        <li class="mx-3"><router-link to="/">Home</router-link></li>
-        <li class="mx-3"><router-link to="/">Blog</router-link></li>
-        <li class="mx-3"><router-link to="about">About</router-link></li>
-      </ul> -->
     </nav>
   </div>
 </template>
