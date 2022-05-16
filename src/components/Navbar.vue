@@ -5,7 +5,7 @@
     >
       <div>
         <router-link to="/">
-          <h4 class="font-bold text-white">Twincode</h4>
+          <h4 class="font-bold text-white">Test</h4>
         </router-link>
       </div>
       <ul class="flex flex-row justify-center items-center text-white">
