@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto my-5 border h-screen">
+  <div class="container mx-auto border h-screen">
     <div
       class="grid grid-rows-1 xs:grid-cols-12 md:grid-cols-3 lg:grid-cols-4 gap-4"
     >
