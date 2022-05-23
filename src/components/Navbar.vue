@@ -9,7 +9,7 @@
         },
       ]"
     >
-      <div class="">
+      <div>
         <router-link to="/">
           <h4 class="font-bold text-purple-700">Twincode</h4>
         </router-link>
