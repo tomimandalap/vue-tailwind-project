@@ -1,15 +1,18 @@
 <template>
   <div>
     <Jumbotron :title="title" :subtitle="subtitle" :imgcover="imgcover" />
+    <Myreasonwork />
   </div>
 </template>
 
 <script>
 import Jumbotron from '@/components/Jumbotron'
+import Myreasonwork from '@/components/Myreasonwork'
 export default {
   name: 'Index',
   components: {
     Jumbotron,
+    Myreasonwork,
   },
   data() {
     return {

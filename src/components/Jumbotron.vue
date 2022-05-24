@@ -1,5 +1,5 @@
 <template>
-  <div class="h-100">
+  <div class="lg:container md:container container mx-auto h-100">
     <div class="text-center">
       <h1 class="font-bold sm:text-5xl text-2xl px-5 text-black sm:mt-20">
         {{ title }}

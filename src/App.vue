@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <div
-      class="lg:container md:container container mx-auto pt-24 pb-0 mb-0 bg-white"
-    >
+    <div class="pt-24 pb-0 mb-0 bg-white">
       <router-view />
     </div>
   </div>
