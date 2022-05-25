@@ -99,17 +99,21 @@
         />
       </div>
     </div>
+
+    <Myworkingproject />
   </div>
 </template>
 
 <script>
 import Jumbotron from '@/components/Jumbotron'
 import Myreasonwork from '@/components/Myreasonwork'
+import Myworkingproject from '@/components/Myworkingproject'
 export default {
   name: 'Index',
   components: {
     Jumbotron,
     Myreasonwork,
+    Myworkingproject,
   },
   data() {
     return {

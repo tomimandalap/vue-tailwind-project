@@ -20,7 +20,7 @@
           :key="item"
           :src="require('../assets/images/Card 1.png')"
           alt="image-card"
-          class="rounded-3xl sm:h-56 w-full"
+          class="rounded-3xl sm:h-56 w-full hover:cursor-pointer hover:drop-shadow-lg"
         />
       </div>
     </div>
