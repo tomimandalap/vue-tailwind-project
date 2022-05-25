@@ -2,7 +2,7 @@
   <div class="bg-slate-100 fixed top-0 left-0 right-0">
     <nav
       :class="[
-        'container mx-auto flex flex-wrap justify-between sm:px-0 px-3 transition-all ',
+        'sm:container mx-auto flex flex-wrap justify-between sm:px-0 sm:px-5 px-3 transition-all ',
         {
           'h-16 items-center duration-200 ease-in': !stateMenu,
           'h-48 items-start py-5 shadow-md duration-400 ease-out': stateMenu,
@@ -128,6 +128,7 @@ export default {
     handleUrl(url) {
       this.url_active = url
       this.$router.push(url).catch(() => {})
+      this.stateMenu = false
     },
   },
 }

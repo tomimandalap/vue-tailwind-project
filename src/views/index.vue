@@ -82,6 +82,23 @@
     </div>
 
     <Myreasonwork />
+
+    <div class="py-28 px-0 text-center bg-gray-50">
+      <div class="lg:container md:container container mx-auto px-5">
+        <h1
+          class="mx-auto font-bold md:text-3xl sm:text-2xl text-lg lg:w-6/12 w-full mb-20"
+        >
+          I'm proud to have worked and collaborated with some team awesome in
+          companies:
+        </h1>
+
+        <img
+          :src="require('../assets/images/logo.svg')"
+          alt="logo.svg"
+          class="mx-auto w-16"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
