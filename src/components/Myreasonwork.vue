@@ -13,7 +13,7 @@
       </p>
 
       <div
-        class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-5 py-16"
+        class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-5 pt-16 pb-16"
       >
         <img
           v-for="item in 6"
@@ -24,6 +24,13 @@
         />
       </div>
     </div>
+
+    <button
+      type="button"
+      class="border border-purple-700 hover:bg-purple-700 text-purple-700 hover:text-white rounded-lg px-8 py-2"
+    >
+      See More
+    </button>
   </div>
 </template>
 <script>
