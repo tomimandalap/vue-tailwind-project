@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-100 fixed top-0 left-0 right-0">
+  <div class="bg-slate-100 fixed top-0 left-0 right-0" style="z-index: 1">
     <nav
       :class="[
         'sm:container mx-auto flex flex-wrap justify-between sm:px-0 sm:px-5 px-3 transition-all ',
@@ -128,6 +128,11 @@ export default {
     handleUrl(url) {
       this.url_active = url
       this.$router.push(url).catch(() => {})
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      })
       this.stateMenu = false
     },
   },
