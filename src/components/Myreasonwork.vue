@@ -1,5 +1,5 @@
 <template>
-  <div class="py-28 px-0 text-center">
+  <div class="md:py-28 sm:py-20 py-10 px-0 text-center">
     <div class="lg:container md:container container mx-auto px-5">
       <h1 class="text-3xl font-bold">
         My Reason

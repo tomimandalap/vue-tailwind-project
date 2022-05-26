@@ -2,13 +2,13 @@
   <div>
     <Jumbotron :title="title" :subtitle="subtitle" :imgcover="imgcover" />
 
-    <div class="py-28 px-0 text-center bg-gray-50">
+    <div class="md:py-28 sm:py-20 py-10 px-0 text-center bg-gray-50">
       <div class="lg:container md:container container mx-auto px-5">
         <h1 class="text-3xl font-bold">Wellcome, Nice to meet you!</h1>
         <img
           :src="require('../assets/images/bg-home.svg')"
           alt="image_profile"
-          class="flex mx-auto w-52 h-52 border-2 border-black rounded-full mt-24 mb-5"
+          class="flex mx-auto w-52 h-52 border-2 border-black rounded-full md:mt-24 mt-10 mb-5"
         />
         <h4 class="font-bold text-xl">Tomi Mandala Putra</h4>
         <span>Full-stack Developer & Mentor</span>
@@ -101,6 +101,50 @@
     </div>
 
     <Myworkingproject />
+
+    <div class="md:py-28 sm:py-20 py-10 px-0 text-center bg-gray-50">
+      <div class="lg:container md:container container mx-auto px-5">
+        <h1 class="font-bold md:text-3xl sm:text-2xl text-lg w-full mb-6">
+          Testimonials
+        </h1>
+
+        <p class="text-base mx-auto max-w-4xl">
+          People I've worked with have said some nice things...
+        </p>
+
+        <!-- card testimonial -->
+        <div
+          class="min-h-min bg-white shadow-xl lg:p-12 md:p-8 sm:p-6 p-4 mt-16"
+        >
+          <div class="flex flex-row lg:gap-12 md:gap-8 sm:gap-6 gap-4">
+            <img
+              :src="require('../assets/images/people.png')"
+              alt="testimonial-image"
+              class="lg:basis-1/4 md:basis-4/12 sm:basis-4/12 basis-6/12 w-12 sm:block hidden"
+            />
+
+            <div class="basis-full text-left flex flex-col justify-center">
+              <h1 class="md:text-xl sm:text-xl text-base font-bold">
+                Alvin Soedjatmo
+              </h1>
+
+              <p class="sm:text-sm text-xs mt-2.5 md:mb-5 mb-2.5">
+                Lead Project and Good kind
+              </p>
+
+              <p class="sm:text-base text-sm m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                facere iste vero veritatis repudiandae omnis, ipsam repellat eos
+                incidunt tenetur doloribus quidem obcaecati ipsum nisi error rem
+                molestias totam! Rem maxime, eaque quae quis illum recusandae
+                iusto inventore sed tempora accusantium perferendis eum est
+                magni animi! Animi repellat omnis aliquam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
