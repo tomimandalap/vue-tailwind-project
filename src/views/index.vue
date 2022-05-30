@@ -104,17 +104,19 @@
 
     <div class="md:py-28 sm:py-20 py-10 px-0 text-center bg-gray-50">
       <div class="lg:container md:container container mx-auto px-5">
-        <h1 class="font-bold md:text-3xl sm:text-2xl text-lg w-full mb-6">
+        <h1
+          class="font-bold md:text-3xl sm:text-2xl text-lg w-full sm:mb-6 mb-2.5"
+        >
           Testimonials
         </h1>
 
-        <p class="text-base mx-auto max-w-4xl">
+        <p class="sm:text-base text-sm mx-auto max-w-4xl">
           People I've worked with have said some nice things...
         </p>
 
         <!-- card testimonial -->
         <div
-          class="min-h-min bg-white shadow-xl lg:p-12 md:p-8 sm:p-6 p-4 mt-16"
+          class="min-h-min bg-white shadow-xl lg:p-12 md:p-8 sm:p-6 p-4 sm:mt-16 mt-10"
         >
           <div class="flex flex-row lg:gap-12 md:gap-8 sm:gap-6 gap-4">
             <img

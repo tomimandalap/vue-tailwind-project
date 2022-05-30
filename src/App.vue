@@ -4,13 +4,16 @@
     <div class="pt-24 pb-0 mb-0 bg-white">
       <router-view />
     </div>
+    <Footer />
   </div>
 </template>
 <script>
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 export default {
   components: {
     Navbar,
+    Footer,
   },
   data() {
     return {}

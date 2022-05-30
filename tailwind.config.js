@@ -9,7 +9,11 @@ module.exports = {
       blue: theme('colors.blue.500'),
       white: theme('colors.slate.100'),
     }),
-    extend: {},
+    extend: {
+      // backgroundImage: {
+      //   'footer-texture': 'url(/assets/images/bg-home.svg)',
+      // },
+    },
   },
   variants: {
     extend: {},
