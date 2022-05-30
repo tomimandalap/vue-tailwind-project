@@ -128,11 +128,6 @@ export default {
     handleUrl(url) {
       this.url_active = url
       this.$router.push(url).catch(() => {})
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      })
       this.stateMenu = false
     },
   },
