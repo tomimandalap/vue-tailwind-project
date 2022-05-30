@@ -118,6 +118,9 @@ export default {
       ],
     }
   },
+  updated() {
+    this.url_active = this.$route.path
+  },
   mounted() {
     this.url_active = this.$route.path
   },
