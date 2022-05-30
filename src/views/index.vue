@@ -83,7 +83,7 @@
     <div class="py-28 px-0 text-center bg-gray-50">
       <div class="lg:container md:container container mx-auto px-5">
         <h1
-          class="mx-auto font-bold md:text-3xl sm:text-2xl text-lg lg:w-6/12 w-full mb-20"
+          class="mx-auto font-bold md:text-3xl sm:text-2xl text-lg lg:w-6/12 w-full md:mb-20 sm:mb-12 mb-8"
         >
           I'm proud to have worked and collaborated with some team awesome in
           companies:
@@ -92,7 +92,7 @@
         <img
           :src="require('../assets/images/logo.svg')"
           alt="logo.svg"
-          class="mx-auto w-16"
+          class="mx-auto sm:w-16 w-12"
         />
       </div>
     </div>
