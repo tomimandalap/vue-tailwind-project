@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <LayoutDefault>
     <Jumbotron :title="title" :subtitle="subtitle" :imgcover="imgcover" />
 
     <div class="md:py-28 sm:py-20 py-10 px-0 text-center bg-gray-50">
@@ -202,16 +202,18 @@
         </div>
       </div>
     </div>
-  </div>
+  </LayoutDefault>
 </template>
 
 <script>
+import LayoutDefault from '@/layouts/default'
 import Jumbotron from '@/components/Jumbotron'
 import Myreasonwork from '@/components/Myreasonwork'
 import Myworkingproject from '@/components/Myworkingproject'
 export default {
   name: 'Index',
   components: {
+    LayoutDefault,
     Jumbotron,
     Myreasonwork,
     Myworkingproject,

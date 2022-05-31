@@ -22,6 +22,18 @@ const routes = [
     name: 'Contact',
     component: Contact,
   },
+  {
+    path: '*',
+    beforeEnter: (to, from, next) => {
+      next('/404')
+    },
+  },
+  {
+    path: '/404',
+    name: 'notFound',
+    component: () => import('@/views/NotFound'),
+    meta: { access: false },
+  },
 ]
 
 const router = new VueRouter({

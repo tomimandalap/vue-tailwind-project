@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <LayoutDefault>
     <Jumbotron :title="title" :subtitle="subtitle" :imgcover="imgcover" />
     <div class="md:py-28 sm:py-20 py-10 px-0 bg-gray-50">
       <div class="lg:container md:container container mx-auto px-5">
@@ -69,14 +69,16 @@
         </form>
       </div>
     </div>
-  </div>
+  </LayoutDefault>
 </template>
 
 <script>
+import LayoutDefault from '@/layouts/default'
 import Jumbotron from '@/components/Jumbotron'
 export default {
   name: 'Contact',
   components: {
+    LayoutDefault,
     Jumbotron,
   },
   data() {
