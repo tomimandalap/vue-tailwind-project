@@ -113,33 +113,91 @@
 
         <!-- card testimonial -->
         <div
-          class="min-h-min bg-white shadow-xl lg:p-12 md:p-8 sm:p-6 p-4 sm:mt-16 mt-10"
+          class="relative md:py-28 sm:py-20 py-10 bg-white shadow-xl lg:p-12 md:p-8 sm:p-6 p-4 sm:mt-16 mt-10"
         >
-          <div class="flex flex-row lg:gap-12 md:gap-8 sm:gap-6 gap-4">
-            <img
-              :src="require('../assets/images/people.png')"
-              alt="testimonial-image"
-              class="lg:basis-1/4 md:basis-4/12 sm:basis-4/12 basis-6/12 w-12 sm:block hidden"
-            />
+          <div
+            v-for="(item, i) in items"
+            v-show="show_id == i"
+            :key="i"
+            :class="[
+              {
+                'duration-700 ease-in-out': show_id == i,
+              },
+            ]"
+          >
+            <div class="flex flex-row lg:gap-12 md:gap-8 sm:gap-6 gap-4">
+              <img
+                :src="require(`../assets/images/${item.image}`)"
+                alt="testimonial-image"
+                class="lg:basis-1/4 md:basis-4/12 basis-fill w-12 md:block hidden"
+              />
 
-            <div class="basis-full text-left flex flex-col justify-center">
-              <h1 class="md:text-xl sm:text-xl text-base font-bold">
-                Alvin Soedjatmo
-              </h1>
+              <div class="sm:basis-full text-left flex flex-col justify-center">
+                <h1 class="md:text-xl sm:text-xl text-base font-bold">
+                  {{ item.name }}
+                </h1>
 
-              <p class="sm:text-sm text-xs mt-2.5 md:mb-5 mb-2.5">
-                Lead Project and Good kind
-              </p>
+                <p class="sm:text-sm text-xs mt-2.5 md:mb-5 mb-2.5">
+                  {{ item.position }}
+                </p>
 
-              <p class="sm:text-base text-sm m-0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                facere iste vero veritatis repudiandae omnis, ipsam repellat eos
-                incidunt tenetur doloribus quidem obcaecati ipsum nisi error rem
-                molestias totam! Rem maxime, eaque quae quis illum recusandae
-                iusto inventore sed tempora accusantium perferendis eum est
-                magni animi! Animi repellat omnis aliquam.
-              </p>
+                <p class="sm:text-base text-sm m-0">
+                  {{ item.description }}
+                </p>
+              </div>
             </div>
+
+            <button
+              v-show="items.length"
+              type="button"
+              class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              @click="i > 0 ? onPrev() : ''"
+            >
+              <span
+                class="inline-flex justify-center items-center sm:w-10 sm:h-10 w-7 h-7 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="sm:w-6 w-4 sm:h-6 h-4 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+
+            <button
+              v-show="items.length"
+              type="button"
+              class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              @click="i >= items.length - 1 ? '' : onNext()"
+            >
+              <span
+                class="inline-flex justify-center items-center sm:w-10 sm:h-10 w-7 h-7 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="sm:w-6 w-4 sm:h-6 h-4 text-white dark:text-gray-800"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -163,11 +221,34 @@ export default {
       imgcover: 'bg-home.svg',
       title: 'Full-stack Developer & Mentor',
       subtitle: `“Everything about code is simple things like a magic word”`,
+      show_id: 0,
+      items: [
+        {
+          name: 'Jhony',
+          position: 'Lead UI/UX',
+          image: 'people.png',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facere iste vero veritatis repudiandae omnis, ipsam repellat eos incidunt tenetur doloribus quidem obcaecati ipsum nisi error rem molestias totam! Rem maxime, eaque quae quis illum recusandae iusto inventore sed tempora accusantium perferendis eum est magni animi! Animi repellat omnis aliquam.',
+        },
+        {
+          name: 'Shinta',
+          position: 'Lead FE',
+          image: 'people2.jpeg',
+          description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facere iste vero veritatis repudiandae omnis, ipsam repellat eos incidunt tenetur doloribus quidem obcaecati ipsum nisi error rem molestias totam! Rem maxime, eaque quae quis illum recusandae iusto inventore sed tempora accusantium perferendis eum est magni animi! Animi repellat omnis aliquam.',
+        },
+      ],
     }
   },
   methods: {
     handleUrl(link) {
       window.open(link)
+    },
+    onNext() {
+      this.show_id += 1
+    },
+    onPrev() {
+      this.show_id -= 1
     },
   },
 }

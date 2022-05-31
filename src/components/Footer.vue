@@ -5,7 +5,7 @@
         <img
           :src="require('../assets/images/Logo_footer.svg')"
           alt="Logo_footer.svg"
-          class="w-10 mr-5"
+          class="w-10 mr-2"
         />
         <h4 class="text-xl font-bold text-white">Twincode</h4>
       </div>

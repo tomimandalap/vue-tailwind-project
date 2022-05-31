@@ -2,13 +2,8 @@
   <div>
     <Jumbotron :title="title" :subtitle="subtitle" :imgcover="imgcover" />
 
-    <div
-      id="controls-carousel"
-      class="relative md:py-28 sm:py-20 py-10"
-      data-carousel="static"
-    >
-      <!-- Carousel wrapper -->
-      <div class="overflow-hidden relative h-full md:h-80">
+    <div class="relative md:py-28 sm:py-20 py-10">
+      <div class="overflow-hidden relative h-full">
         <div v-for="(item, i) in items" v-show="show_id == i" :key="i">
           <div
             :class="[
@@ -17,7 +12,6 @@
                 'duration-200 ease-out': show_id != i,
               },
             ]"
-            data-carousel-item
           >
             <img
               :src="require(`../assets/images/${item.image}`)"
@@ -27,9 +21,9 @@
           </div>
 
           <button
+            v-show="items.length"
             type="button"
             class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            data-carousel-prev
             @click="i > 0 ? onPrev() : ''"
           >
             <span
@@ -53,9 +47,9 @@
           </button>
 
           <button
+            v-show="items.length"
             type="button"
             class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
-            data-carousel-next
             @click="i >= items.length - 1 ? '' : onNext()"
           >
             <span
