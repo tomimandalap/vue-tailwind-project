@@ -30,8 +30,8 @@ const routes = [
   },
   {
     path: '/404',
-    name: 'notFound',
-    component: () => import('@/views/NotFound'),
+    name: 'Not_Found',
+    component: () => import('@/views/Not_Found'),
     meta: { access: false },
   },
 ]

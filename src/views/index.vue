@@ -150,7 +150,7 @@
             <button
               v-show="items.length"
               type="button"
-              class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              class="flex absolute top-0 left-0 z-1 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
               @click="i > 0 ? onPrev() : ''"
             >
               <span
@@ -176,7 +176,7 @@
             <button
               v-show="items.length"
               type="button"
-              class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+              class="flex absolute top-0 right-0 z-1 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
               @click="i >= items.length - 1 ? '' : onNext()"
             >
               <span
