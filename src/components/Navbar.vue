@@ -9,11 +9,15 @@
         },
       ]"
     >
-      <div>
-        <router-link to="/">
-          <h4 class="font-bold text-purple-700">Twincode</h4>
-        </router-link>
-      </div>
+      <router-link to="/">
+        <img
+          :src="require('../assets/images/logo.svg')"
+          alt="logo.svg"
+          class="sm:w-10 w-8"
+        />
+        <!-- <h4 class="font-bold text-purple-700">Twincode</h4> -->
+      </router-link>
+
       <!-- small to up -->
       <div class="sm:block hidden">
         <button
