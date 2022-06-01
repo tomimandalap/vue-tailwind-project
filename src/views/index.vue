@@ -6,18 +6,21 @@
       <div class="lg:container md:container container mx-auto px-5">
         <h1 class="text-3xl font-bold">Wellcome, Nice to meet you!</h1>
         <img
-          :src="require('../assets/images/bg-home.svg')"
+          :src="require('../assets/images/profile.png')"
           alt="image_profile"
-          class="flex mx-auto w-52 h-52 border-2 border-black rounded-full md:mt-24 mt-10 mb-5"
+          class="flex mx-auto w-52 h-52 rounded-full md:mt-24 mt-10 mb-5 object-cover object-center"
         />
         <h4 class="font-bold text-xl">Tomi Mandala Putra</h4>
         <span>Full-stack Developer & Mentor</span>
-        <p class="text-base flex mx-auto max-w-4xl mt-6 mb-0">
-          Seorang yang mempunyai latar belakang S1 Fisika Intrumentasi, Saya
+        <p class="text-base mx-auto max-w-4xl mt-6 mb-0">
+          Tomi mempunyai latar belakang S1 Fisika Intrumentasi, Tomi
           memberanikan diri terjun dalam dunia pemprogram web secara otodidak
           dengan berbekal pemahaman dasar yaitu HTML, CSS dan JS. Serta
           mengikuti bootcamp full-stack developer untuk melatih kemampuan dan
-          pemahaman tentang Vue, NuxtJS, Bootstrap, Vuetify, Node dan Express.
+          pemahaman tentang Vue, NuxtJS, Bootstrap, Vuetify, Tailwind, Node dan
+          Express. Saat ini Tomi bekerja sebagai Frontend Developer di
+          <strong>PrivyID</strong>
+          .
         </p>
 
         <div class="my-5">
