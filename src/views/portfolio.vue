@@ -120,7 +120,7 @@ export default {
       items: [
         {
           image: 'basic.png',
-          title: 'HTML, JS and CSS',
+          title: 'HTML, JS & CSS',
         },
         {
           image: 'vue.png',
