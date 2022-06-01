@@ -13,12 +13,12 @@
         <h4 class="font-bold text-xl">Tomi Mandala Putra</h4>
         <span>Full-stack Developer & Mentor</span>
         <p class="text-base mx-auto max-w-4xl mt-6 mb-0">
-          Tomi mempunyai latar belakang S1 Fisika Intrumentasi, Tomi
-          memberanikan diri terjun dalam dunia pemprogram web secara otodidak
-          dengan berbekal pemahaman dasar yaitu HTML, CSS dan JS. Serta
-          mengikuti bootcamp full-stack developer untuk melatih kemampuan dan
-          pemahaman tentang Vue, NuxtJS, Bootstrap, Vuetify, Tailwind, Node dan
-          Express. Saat ini Tomi bekerja sebagai Frontend Developer di
+          Tomi has a background in Instrumentation Physics, Tomi ventured into
+          the world of self-taught web programming armed with a basic
+          understanding of HTML, CSS and JS. As well as join a full-stack
+          developer bootcamp to practice your skills and understanding of Vue,
+          NuxtJS, Bootstrap, Vuetify, Tailwind, Node and Fast. Currently, Tomi
+          works as a Frontend Developer at
           <strong>PrivyID</strong>
           .
         </p>
