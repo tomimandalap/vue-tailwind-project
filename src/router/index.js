@@ -23,6 +23,11 @@ const routes = [
     component: Contact,
   },
   {
+    path: '/my_reason_work/:id',
+    name: 'DetailReasonWork',
+    component: () => import('@/views/my_reason_work'),
+  },
+  {
     path: '*',
     beforeEnter: (to, from, next) => {
       next('/404')
@@ -32,7 +37,6 @@ const routes = [
     path: '/404',
     name: 'Not_Found',
     component: () => import('@/views/Not_Found'),
-    meta: { access: false },
   },
 ]
 
