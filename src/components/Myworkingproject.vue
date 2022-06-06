@@ -19,6 +19,7 @@
           :src="require('../assets/images/Card 2.png')"
           alt="image-card"
           class="rounded-3xl sm:h-56 w-full hover:blur-sm hover:brightness-50 hover:cursor-pointer"
+          @click="$router.push(`/my_project_work/${item}`)"
         />
       </div>
 

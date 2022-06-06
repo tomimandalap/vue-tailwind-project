@@ -28,6 +28,11 @@ const routes = [
     component: () => import('@/views/my_reason_work'),
   },
   {
+    path: '/my_project_work/:id',
+    name: 'DetailProjectWork',
+    component: () => import('@/views/my_working_project'),
+  },
+  {
     path: '*',
     beforeEnter: (to, from, next) => {
       next('/404')
