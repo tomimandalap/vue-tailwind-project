@@ -46,7 +46,7 @@
       <button
         type="button"
         class="border border-purple-700 hover:bg-purple-700 text-purple-700 hover:text-white rounded-lg px-8 py-2 my-5"
-        @click="$router.push('/')"
+        @click="$router.go(-1)"
       >
         Back
       </button>
